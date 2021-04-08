@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 style="position: absolute; left: 220px; top: 175px;">Do you love me</h1>
+    <input type="button" value="Yes" onclick="alert('<3')" style="position: absolute; left: 285px; top: 235px;">
+    <input type="button" value="No" id="btnNo" style="position: absolute; left: 360px; top: 235px;" onmouseover="moveAnywhere()">
+    <script>
+        moveRandom = document.getElementById('btnNo');
+        function moveAnywhere(){
+            moveRandom.style.left= Math.random()*window.innerWidth + 'px';
+            moveRandom.style.top= Math.random()*window.innerHeight + 'px';
+        }
+    </script>
+</body>
+</html>
