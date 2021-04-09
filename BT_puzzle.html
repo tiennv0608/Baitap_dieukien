@@ -24,42 +24,47 @@
         let pic1 = document.getElementById('pic1');
         let a = Math.round(Math.random() * 2) + 1;
         pic1.src = "Pictures/Anh" + a + ".jpg";
-        console.log(a)
+        console.log(a);
+        checking();
     }
 
     function changePicture2() {
         let pic2 = document.getElementById('pic2');
         let a = Math.round(Math.random() * 2) + 1;
         pic2.src = "Pictures/Anh" + a + ".jpg";
-        console.log(a)
+        console.log(a);
+        checking();
     }
 
     function changePicture3() {
         let pic3 = document.getElementById('pic3');
         let a = Math.round(Math.random() * 2) + 1;
         pic3.src = "Pictures/Anh" + a + ".jpg";
-        console.log(a)
+        console.log(a);
+        checking();
     }
 
     function changePicture4() {
         let pic4 = document.getElementById('pic4');
         let a = Math.round(Math.random() * 2) + 1;
         pic4.src = "Pictures/Anh" + a + ".jpg";
-        console.log(a)
+        console.log(a);
+        checking();
     }
 
     function changePicture5() {
         let pic5 = document.getElementById('pic5');
         let a = Math.round(Math.random() * 2) + 1;
         pic5.src = "Pictures/Anh" + a + ".jpg";
-        console.log(a)
+        console.log(a);
+        checking();
     }
     function checking() {
-        let pic1 = document.getElementById('pic1').value;
-        let pic2 = document.getElementById('pic2').value;
-        let pic3 = document.getElementById('pic3').value;
-        let pic4 = document.getElementById('pic4').value;
-        let pic5 = document.getElementById('pic5').value;
+        let pic1 = document.getElementById('pic1').src;
+        let pic2 = document.getElementById('pic2').src;
+        let pic3 = document.getElementById('pic3').src;
+        let pic4 = document.getElementById('pic4').src;
+        let pic5 = document.getElementById('pic5').src;
         if (pic1 == pic2 && pic2 == pic3){
             if (pic3 == pic4 && pic4 == pic5){
                 alert("Congratulations")
