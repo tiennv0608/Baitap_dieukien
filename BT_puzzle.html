@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="Pictures/Anh1.jpg" id="pic1" onclick="changePicture1()" style="position: absolute; top: 50px; left: 900px;" height="120px" width="250px"/></td>
+            <td><img src="Pictures/Anh1.jpg" id="pic2" onclick="changePicture2()" style="position: absolute; top: 200px; left: 900px;" height="120px" width="250px"/></td>
+            <td><img src="Pictures/Anh1.jpg" id="pic3" onclick="changePicture3()" style="position: absolute; top: 350px; left: 900px;" height="120px" width="250px"/></td>
+            <td><img src="Pictures/Anh1.jpg" id="pic4" onclick="changePicture4()" style="position: absolute; top: 500px; left: 900px;" height="120px" width="250px"/></td>
+            <td><img src="Pictures/Anh1.jpg" id="pic5" onclick="changePicture5()" style="position: absolute; top: 650px; left: 900px;" height="120px" width="250px"/></td>
+        </tr>
+    </table>
+    <script>
+        function changePicture1() {
+            let pic = document.getElementById('pic1');
+            if (pic.src == "http://localhost:63342/08.%20Baitap_cautrucdieukien/Pictures/Anh1.jpg") {
+                pic.src = "Pictures/Anh2.jpg";
+            } else if (pic.src == "http://localhost:63342/08.%20Baitap_cautrucdieukien/Pictures/Anh2.jpg") {
+                pic.src = "Pictures/Anh3.jpg";
+            } else {
+                pic.src = "Pictures/Anh1.jpg";
+            }
+        }
+        function changePicture2() {
+            let pic = document.getElementById('pic2');
+            if (pic.src == "http://localhost:63342/08.%20Baitap_cautrucdieukien/Pictures/Anh1.jpg") {
+                pic.src = "Pictures/Anh2.jpg";
+            } else if (pic.src == "http://localhost:63342/08.%20Baitap_cautrucdieukien/Pictures/Anh2.jpg") {
+                pic.src = "Pictures/Anh3.jpg";
+            } else {
+                pic.src = "Pictures/Anh1.jpg";
+            }
+        }
+        function changePicture3() {
+            let pic = document.getElementById('pic3');
+            if (pic.src == "http://localhost:63342/08.%20Baitap_cautrucdieukien/Pictures/Anh1.jpg") {
+                pic.src = "Pictures/Anh2.jpg";
+            } else if (pic.src == "http://localhost:63342/08.%20Baitap_cautrucdieukien/Pictures/Anh2.jpg") {
+                pic.src = "Pictures/Anh3.jpg";
+            } else {
+                pic.src = "Pictures/Anh1.jpg";
+            }
+        }
+        function changePicture4() {
+            let pic = document.getElementById('pic4');
+            if (pic.src == "http://localhost:63342/08.%20Baitap_cautrucdieukien/Pictures/Anh1.jpg") {
+                pic.src = "Pictures/Anh2.jpg";
+            } else if (pic.src == "http://localhost:63342/08.%20Baitap_cautrucdieukien/Pictures/Anh2.jpg") {
+                pic.src = "Pictures/Anh3.jpg";
+            } else {
+                pic.src = "Pictures/Anh1.jpg";
+            }
+        }
+        function changePicture5() {
+            let pic = document.getElementById('pic5');
+            if (pic.src == "http://localhost:63342/08.%20Baitap_cautrucdieukien/Pictures/Anh1.jpg") {
+                pic.src = "Pictures/Anh2.jpg";
+            } else if (pic.src == "http://localhost:63342/08.%20Baitap_cautrucdieukien/Pictures/Anh2.jpg") {
+                pic.src = "Pictures/Anh3.jpg";
+            } else {
+                pic.src = "Pictures/Anh1.jpg";
+            }
+        }
+        function congratulations() {
+            pic1 = document.getElementById('pic1').value;
+            pic2 = document.getElementById('pic2').value;
+            pic3 = document.getElementById('pic3').value;
+            pic4 = document.getElementById('pic4').value;
+            pic5 = document.getElementById('pic5').value;
+            if (pic1 == pic2) {
+                if (pic1 == pic3) {
+                    if (pic1 == pic4) {
+                        if (pic1 == pic5) {
+                            alert ('Congratulations');
+                        }
+                    }
+                }
+            }
+        }
+        window.onchange = congratulations();
+    </script>
+</body>
+</html>
