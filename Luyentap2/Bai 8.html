@@ -6,8 +6,16 @@
 </head>
 <body>
 <script>
-    a = +prompt("Nhập a :");
-    alert(math.sqrt(a));
+    let age = +prompt("Nhập vào số tuổi :");
+    if (age > 0) {
+        if (age < 120) {
+            alert("Yes, you're right!");
+        } else {
+            alert("Ai mà sống lâu vậy?")
+        }
+    } else {
+        alert("Đó là độ tuổi của người âm sao?");
+    }
 </script>
 </body>
 </html>
