@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="temperature"><sup>o</sup>C
+    <input type="button" value="Transfer" onclick="transfer()">
+</form>
+<script>
+    function transfer() {
+        celsius = document.getElementById('temperature').value;
+        farenheit = celsius * 9 / 5 + 32;
+        alert(farenheit + " độ F");
+    }
+</script>
+</body>
+</html>
