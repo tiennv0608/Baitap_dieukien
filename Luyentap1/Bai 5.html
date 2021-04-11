@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let test=+prompt("Nhập điểm kiểm tra :");
+    let mid=+prompt("Nhập điểm kiểm tra giữa kỳ :");
+    let final=+prompt("Nhập điểm kiểm tra cuối kỳ :");
+    average = (test + mid * 2 + final * 7)/10;
+    if (average >= 8) {
+        grade = "A";
+    } else if (average >=6.5) {
+        grade = "B";
+    } else if (average >= 5) {
+        grade = "C";
+    } else if (average >= 4) {
+        grade = "D";
+    } else {
+        grade = "F";
+    }
+    alert("Xep hang loai " + grade);
+</script>
+</body>
+</html>
