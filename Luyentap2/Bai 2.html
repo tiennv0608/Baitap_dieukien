@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="length">
+    <input type="button" value="Transfer" onclick="change()">
+    <p id="results">Kết quả là:</p>
+</form>
+<script>
+    function change() {
+        meter = document.getElementById('length').value;
+        feet = meter * 3.2808;
+        document.getElementById('results').innerHTML = "Kết quả là : " + feet + " feet";
+    }
+</script>
+</body>
+</html>
