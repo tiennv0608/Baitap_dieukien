@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let giaThueBao = 25000;
+    let soPhut = +prompt("Nhập số phút trong tháng :");
+    if (soPhut == 0) {
+        cuoc = giaThueBao;
+    } else if (soPhut <=50) {
+        cuoc = (giaThueBao + soPhut * 600);
+    } else if (soPhut <= 200) {
+        cuoc = (giaThueBao + 50 *600 + (soPhut-50) *400);
+    } else {
+        cuoc = (giaThueBao + 50 * 600 + 150 * 400 +(soPhut-200) * 200);
+    }
+    alert("Tiền cước điện thoại tháng này là:" + cuoc);
+</script>
+</body>
+</html>
