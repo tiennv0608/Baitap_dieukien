@@ -11,19 +11,19 @@
     value3 = +prompt("Nhập số z : ","");
     if (value1 > value2) {
         if (value1 > value3) {
-            alert(value1);
+            max = value1;
         } else {
-            alert(value3);
+            max = value3;
         }
-    else
-        {
-            if (value2 > value3) {
-                alert(value2);
-            } else {
-                alert(value3);
-            }
+    } else {
+        if (value2 > value3) {
+            max = value2;
+        } else {
+            max = value3;
         }
     }
+    alert(max);
+
 </script>
 </body>
 </html>
